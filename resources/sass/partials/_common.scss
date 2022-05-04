@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.my-btn-primary {
+	border: none;
+	cursor: pointer;
+	color: white;
+	font-weight: 600;
+	padding: 0.7rem 1.5rem;
+	text-transform: uppercase;
+	background-color: $brandColor;
+}
+
+.my-btn-outline-primary {
+	background-color: transparent;
+	color: white;
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+	height: 50px;
+	padding: 0 1rem;
+	border: 2px solid $brandColor;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+	width: 65%;
+	margin: 0 auto;
+}

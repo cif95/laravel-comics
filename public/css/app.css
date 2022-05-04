@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.my-btn-primary {
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  background-color: #107eec;
+}
+
+.my-btn-outline-primary {
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0 1rem;
+  border: 2px solid #107eec;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+header {
+  font-family: "Asap Condensed", sans-serif;
+}
+header section#upper-header {
+  text-align: end;
+  padding: 0.25rem;
+  color: white;
+  background-color: #107eec;
+  text-transform: uppercase;
+}
+header section#upper-header h6 {
+  display: inline-block;
+  margin-left: 3rem;
+}
+header section#lower-header {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header section#lower-header img {
+  padding-left: 1rem;
+  width: 100px;
+}
+header section#lower-header li {
+  padding: 3rem 0;
+  font-weight: 600;
+  margin-left: 2rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 5px solid transparent;
+}
+header section#lower-header li.active {
+  border-color: #107eec;
+}
+header section#lower-header li.active a {
+  color: #107eec;
+}
+header section#lower-header li a {
+  color: rgb(70, 70, 70);
+}
+
+main {
+  color: white;
+}
+main section#main-jumbo {
+  height: 43vh;
+  position: relative;
+  background-image: url("../../assets/img/jumbotron.jpg");
+}
+main section#main-jumbo button {
+  top: 95%;
+  left: 15.5%;
+  position: absolute;
+  font-size: 1.5rem;
+}
+main section#main-content {
+  padding: 1.5rem 0;
+  font-family: "Asap Condensed", sans-serif;
+  background-color: #1C1C1C;
+}
+main section#main-content .container {
+  display: flex;
+  gap: 1.7rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2.5rem;
+  flex-wrap: wrap;
+}
+main section#main-content .container button {
+  padding: 0.5rem 3rem;
+}
+main section#main-content .container div.card {
+  height: 210px;
+  margin-bottom: 3rem;
+  width: calc(16.6666666667% - 2rem);
+}
+main section#main-content .container div.card img {
+  height: 90%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+main section#main-content .container div.card h4 {
+  margin: 0.85rem 0;
+  font-weight: 400;
+}
+main #main-menu {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #107eec;
+}
+main #main-menu ul {
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main #main-menu ul li {
+  padding: 0.7rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+main #main-menu ul li a {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+main #main-menu ul li a img {
+  height: 60px;
+  max-width: 60px;
+  margin-right: 0.8rem;
+}
+main #main-menu ul li a h4 {
+  font-weight: 400;
+}

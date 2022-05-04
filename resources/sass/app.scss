@@ -1,1 +1,112 @@
-//
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/common';
+
+header {
+	font-family: "Asap Condensed", sans-serif;
+	section#upper-header {
+		text-align: end;
+		padding: 0.25rem;
+		color: white;
+		background-color: $brandColor;
+		text-transform: uppercase;
+		h6 {
+			display: inline-block;
+			margin-left: 3rem;
+		}
+	}
+	section#lower-header {
+    @include flex(center, space-between, row, 0);
+    img {
+      padding-left: 1rem;
+      width: 100px;
+    }
+    li {
+      padding: 3rem 0;
+      font-weight: 600;
+      margin-left: 2rem;
+      font-size: 0.85rem;
+			text-transform: uppercase;
+      display: inline-block;
+      border-bottom: 5px solid transparent;
+      &.active {
+        border-color: $brandColor;
+        a {
+          color: $brandColor;
+        }
+      }
+      a {
+        color: rgb(70, 70, 70);
+      }
+    }
+	}
+}
+
+main {
+	color: white;
+	section#main-jumbo {
+			height: 43vh;
+			position: relative;
+			background-image: url("../../assets/img/jumbotron.jpg");
+			button {
+					top: 95%;
+					left: 15.5%;
+					position: absolute;
+					font-size: 1.5rem;
+			}
+	}
+	section#main-content {
+			padding: 1.5rem 0;
+			font-family: "Asap Condensed", sans-serif;
+			background-color: $secondaryColor;
+			.container {
+					@include flex(flex-start, center, row, 1.7rem);
+					padding-top: 2.5rem;
+					flex-wrap: wrap;
+					button {
+							padding: 0.5rem 3rem;
+					}
+			div.card {
+				height: 210px;
+					margin-bottom: 3rem;
+					width: calc(100% / 6 - 2rem);
+					img {
+							height: 90%;
+							width: 100%;
+							object-fit: cover;
+							object-position: 0% 0%;
+					}
+					h4 {
+							margin: 0.85rem 0;
+							font-weight: 400;
+					}
+			}
+			}
+	}
+	#main-menu {
+			padding: 2rem 0;
+			text-align: center;
+			background-color: $brandColor;
+			ul {
+				@include flex(center, center, row, 4rem);
+				li {
+					padding: 0.7rem;
+							font-size: 1rem;
+							display: inline-block;
+							a {
+									@include flex(center, center, row, 0);
+									color: white;
+									img {
+										height: 60px;
+										max-width: 60px;
+										margin-right: 0.8rem;
+									}
+									h4 {
+										font-weight: 400;
+									}
+					}
+				}
+			}
+	}
+}
+
