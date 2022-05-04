@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $headerLinks = config('headerNavbar');
-    return view('guest.home', ['headerLinks' => $headerLinks]);
+    $footerNavbar = config('footerNavbar');
+    return view('guest.home', ['headerLinks' => $headerLinks, 'footerNav' => $footerNavbar]);
 })->name('guest-home');
 
 
 Route::get('/comics', function () {
     $headerLinks = config('headerNavbar');
+    $footerNavbar = config('footerNavbar');
     $comicsCard = config('comics');
-    return view('guest.comics',  [ "comicsCard" => $comicsCard, 'headerLinks' => $headerLinks ] );
+    return view('guest.comics',  [ "comicsCard" => $comicsCard, 'headerLinks' => $headerLinks, 'footerNav' => $footerNavbar ] );
 })->name('guest-comics');
 
 

@@ -5,136 +5,136 @@
 			[
 				'text'=> "Characters",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Comics",
 				'active'=> true,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Movies",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Tv",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Games",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Videos",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "News",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 		],
-		footerShopNavLinks=> [
+		'footerShopNavLinks'=> [
 			[
 				'text'=> "Shop DC",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Shop DC collectible",
 				'active'=> true,
-				'url'=> "#",
+				'url'=> "/",
 			],
 		],
-		footerDcNavLinks=> [
+		'footerDcNavLinks'=> [
 			[
 				'text'=> "Terms of Use",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Privacy policy(New)",
 				'active'=> true,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Ad choices",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Advertising",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Jobs",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Subscriptions",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Talent workshops",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "CPSC Certificates",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Ratings",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Shop Help",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "Contact Us",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 		],
-		footerSitesNavLinks=> [
+		'footerSitesNavLinks'=> [
 			[
 				'text'=> "DC",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "MAD Magazine",
 				'active'=> true,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "DC Kids",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "DC Universe",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 			[
 				'text'=> "DC Power Visa",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 			],
 		],
-		footerSocials=> [
+		'footerSocials'=> [
 			[
 				'src'=> "footer-facebook.png",
 				'alt'=> "facebook logo",

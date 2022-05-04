@@ -2,8 +2,11 @@
 @import 'partials/mixins';
 @import 'partials/common';
 
-header {
+body {
 	font-family: "Asap Condensed", sans-serif;
+}
+
+header {
 	section#upper-header {
 		text-align: end;
 		padding: 0.25rem;
@@ -47,7 +50,7 @@ main {
 	section#main-jumbo {
 			height: 43vh;
 			position: relative;
-			background-image: url("../../assets/img/jumbotron.jpg");
+			background-image: url("/images/jumbotron.jpg");
 			button {
 					top: 95%;
 					left: 15.5%;
@@ -57,7 +60,6 @@ main {
 	}
 	section#main-content {
 			padding: 1.5rem 0;
-			font-family: "Asap Condensed", sans-serif;
 			background-color: $secondaryColor;
 			.container {
 					@include flex(flex-start, center, row, 1.7rem);
@@ -108,5 +110,48 @@ main {
 				}
 			}
 	}
+}
+
+
+footer.home-footer {
+  section.footer-nav {
+    background-image: url("/images/footer-bg.jpg");
+    nav {
+      padding-top: 1rem;
+      @include flex(flex-start, flex-start, row, 2rem);
+      background: url("/images/dc-logo-bg.png") no-repeat right;
+      div.footer-list-col {
+        padding-bottom: 3.5rem;
+        h3 {
+					color: white;
+          margin-bottom: 0.5rem;
+        }
+        li {
+          padding: 0.12rem 0;
+          a {
+            font-size: 0.8rem;
+            color: rgb(156, 156, 156);
+          }
+        }
+      }
+    }
+  }
+  section.footer-social {
+    padding: 1rem 0;
+    background-color: #303030;
+    font-family: "Asap Condensed", sans-serif;
+    div.container {
+      @include flex(center, space-between, row, 0);
+      div.socials {
+        @include flex(center, space-between, row, 1.5rem);
+        h2 {
+          color: $brandColor;
+        }
+        img {
+          width: 35px;
+        }
+      }
+    }
+  }
 }
 

@@ -1,35 +1,51 @@
-{{-- <footer class="home-footer">
+<footer class="home-footer">
 	<section class="footer-nav">
 		<div class="container">
 			<nav>
 				<div class="footer-list-col">
 					<h3 class="text-uppercase">Dc Comics</h3>
 					<ul>
-						<li v-for="(link, index) in footerDcComicsNavLinks" :key="index">
-							<a :href="link.url">{{ link.text }}</a>
-						</li>
+						@foreach ($footerNav['footerDcComicsNavLinks'] as $link)
+							<li>
+								<a href="{{ $link['url'] }}">
+									{{ $link['text'] }}
+								</a>
+							</li>
+						@endforeach
 					</ul>
 					<h3 class="text-uppercase">Shop</h3>
 					<ul>
-						<li v-for="(link, index) in footerShopNavLinks" :key="index">
-							<a :href="link.url">{{ link.text }}</a>
-						</li>
+						@foreach ($footerNav['footerShopNavLinks'] as $link)
+							<li>
+								<a href="{{ $link['url'] }}">
+									{{ $link['text'] }}
+								</a>
+							</li>
+						@endforeach
 					</ul>
 				</div>
 				<div class="footer-list-col">
 					<h3 class="text-uppercase">Dc</h3>
 					<ul>
-						<li v-for="(link, index) in footerDcNavLinks" :key="index">
-							<a :href="link.url">{{ link.text }}</a>
+						@foreach ($footerNav['footerDcNavLinks'] as $link)
+						<li>
+							<a href="{{ $link['url'] }}">
+								{{ $link['text'] }}
+							</a>
 						</li>
+					@endforeach
 					</ul>
 				</div>
 				<div class="footer-list-col">
 					<h3 class="text-uppercase">Sites</h3>
 					<ul>
-						<li v-for="(link, index) in footerSitesNavLinks" :key="index">
-							<a :href="link.url">{{ link.text }}</a>
+						@foreach ($footerNav['footerSitesNavLinks'] as $link)
+						<li>
+							<a href="{{ $link['url'] }}">
+								{{ $link['text'] }}
+							</a>
 						</li>
+						@endforeach
 					</ul>
 				</div>
 			</nav>
@@ -40,13 +56,10 @@
 			<button class="my-btn-outline-primary">Sign up now!</button>
 			<div class="socials">
 				<h2 class="text-uppercase">Follow us</h2>
-				<img
-					v-for="(item, index) in footerSocials"
-					:key="index"
-					:src="require(`../assets/img/${item.src}`)"
-					:alt="item.alt"
-				/>
+					@foreach ($footerNav['footerSocials'] as $link)
+						<img src="/images/{{ $link['src'] }}"alt="{{ $link['alt'] }}"/>
+					@endforeach
 			</div>
 		</div>
 	</section>
-</footer> --}}
+</footer>

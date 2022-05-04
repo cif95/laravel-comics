@@ -48,9 +48,10 @@ body {
   margin: 0 auto;
 }
 
-header {
+body {
   font-family: "Asap Condensed", sans-serif;
 }
+
 header section#upper-header {
   text-align: end;
   padding: 0.25rem;
@@ -98,7 +99,7 @@ main {
 main section#main-jumbo {
   height: 43vh;
   position: relative;
-  background-image: url("../../assets/img/jumbotron.jpg");
+  background-image: url("/images/jumbotron.jpg");
 }
 main section#main-jumbo button {
   top: 95%;
@@ -108,7 +109,6 @@ main section#main-jumbo button {
 }
 main section#main-content {
   padding: 1.5rem 0;
-  font-family: "Asap Condensed", sans-serif;
   background-color: #1C1C1C;
 }
 main section#main-content .container {
@@ -172,4 +172,56 @@ main #main-menu ul li a img {
 }
 main #main-menu ul li a h4 {
   font-weight: 400;
+}
+
+footer.home-footer section.footer-nav {
+  background-image: url("/images/footer-bg.jpg");
+}
+footer.home-footer section.footer-nav nav {
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: url("/images/dc-logo-bg.png") no-repeat right;
+}
+footer.home-footer section.footer-nav nav div.footer-list-col {
+  padding-bottom: 3.5rem;
+}
+footer.home-footer section.footer-nav nav div.footer-list-col h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+footer.home-footer section.footer-nav nav div.footer-list-col li {
+  padding: 0.12rem 0;
+}
+footer.home-footer section.footer-nav nav div.footer-list-col li a {
+  font-size: 0.8rem;
+  color: rgb(156, 156, 156);
+}
+footer.home-footer section.footer-social {
+  padding: 1rem 0;
+  background-color: #303030;
+  font-family: "Asap Condensed", sans-serif;
+}
+footer.home-footer section.footer-social div.container {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer.home-footer section.footer-social div.container div.socials {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer.home-footer section.footer-social div.container div.socials h2 {
+  color: #107eec;
+}
+footer.home-footer section.footer-social div.container div.socials img {
+  width: 35px;
 }
