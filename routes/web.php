@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $headerLinks = config('navbar');
+    $headerLinks = config('headerNavbar');
     return view('guest.home', ['headerLinks' => $headerLinks]);
 })->name('guest-home');
 
 
 Route::get('/comics', function () {
-    $headerLinks = config('navbar');
+    $headerLinks = config('headerNavbar');
     $comicsCard = config('comics');
     return view('guest.comics',  [ "comicsCard" => $comicsCard, 'headerLinks' => $headerLinks ] );
 })->name('guest-comics');

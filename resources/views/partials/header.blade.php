@@ -13,7 +13,7 @@
 			<ul>
 				@foreach($headerLinks as $link)
 						<li class="{{ ($link['active']) ? 'active' : '' }}">
-							<a href="#">
+							<a href="{{ url($link['url']) }}">
 								{{ $link['text'] }}
 							</a>
 						</li>

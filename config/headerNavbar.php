@@ -4,52 +4,52 @@
 		[
 				'text' => "Characters",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Comics",
 				'active'=> true,
-				'url'=> "#",
+				'url'=> "/comics",
 		],
 		[
 				'text'=> "Movies",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Tv",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Games",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Collectibles",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Videos",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Fans",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "News",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 		[
 				'text'=> "Shop",
 				'active'=> false,
-				'url'=> "#",
+				'url'=> "/",
 		],
 	];
 	
