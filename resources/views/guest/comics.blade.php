@@ -3,9 +3,10 @@
 @section('title', 'Comics')
 
 @section('content')
-@include('partials.hero')
-
-	<section id="main-content">
+	<section id="comics-jumbo">
+		<button class="my-btn-primary">Current Series</button>
+	</section>
+	<section id="comics-content">
 		<div id="cards-wrapper" class="container">
 			@foreach($comicsCard as $card)
 				<div class="card">

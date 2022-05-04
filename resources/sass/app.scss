@@ -47,7 +47,7 @@ header {
 
 main {
 	color: white;
-	section#main-jumbo {
+	section#comics-jumbo {
 			height: 43vh;
 			position: relative;
 			background-image: url("/images/jumbotron.jpg");
@@ -58,7 +58,7 @@ main {
 					font-size: 1.5rem;
 			}
 	}
-	section#main-content {
+	section#comics-content {
 			padding: 1.5rem 0;
 			background-color: $secondaryColor;
 			.container {
@@ -85,7 +85,38 @@ main {
 			}
 			}
 	}
-	#main-menu {
+	section#news-jumbo {
+		height: 43vh;
+		position: relative;
+		background: url("/images/news-jumbo.jpg") top / cover no-repeat ;
+		button {
+				top: 95%;
+				left: 15.5%;
+				position: absolute;
+				font-size: 1.5rem;
+		}
+	}
+	section#news {
+		color: #303030;
+		padding: 2rem 0;
+		div.container {
+			@include flex(center, center, row, 1rem);
+			flex-wrap: wrap;
+			div.card {
+				width: 40%;
+				height: 500px;
+				background-color: #F7F7F7;
+				div.card-img img {
+					width: 100%;
+				}
+				div.card-info {
+					font-size: 0.85rem;
+					padding: 1rem;
+				}
+			}
+		}
+	}
+	section#menu {
 			padding: 1rem 0;
 			text-align: center;
 			background-color: $brandColor;
@@ -113,18 +144,18 @@ main {
 }
 
 
-footer.home-footer {
+footer {
   section.footer-nav {
     background-image: url("/images/footer-bg.jpg");
     nav {
-      padding-top: 1rem;
+			padding: 2.5rem 0;
       @include flex(flex-start, flex-start, row, 2rem);
       background: url("/images/dc-logo-bg.png") no-repeat right;
       div.footer-list-col {
-        padding-bottom: 3.5rem;
+				padding-bottom: 1rem;
         h3 {
 					color: white;
-          margin-bottom: 0.5rem;
+					padding:1rem 0;
         }
         li {
           padding: 0.12rem 0;

@@ -1,4 +1,4 @@
-<header class="home-header">
+<header>
 	<section id="upper-header">
 		<div class="container">
 			<h6>dc power visa</h6>

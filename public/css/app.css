@@ -96,22 +96,22 @@ header section#lower-header li a {
 main {
   color: white;
 }
-main section#main-jumbo {
+main section#comics-jumbo {
   height: 43vh;
   position: relative;
   background-image: url("/images/jumbotron.jpg");
 }
-main section#main-jumbo button {
+main section#comics-jumbo button {
   top: 95%;
   left: 15.5%;
   position: absolute;
   font-size: 1.5rem;
 }
-main section#main-content {
+main section#comics-content {
   padding: 1.5rem 0;
   background-color: #1C1C1C;
 }
-main section#main-content .container {
+main section#comics-content .container {
   display: flex;
   gap: 1.7rem;
   flex-direction: row;
@@ -120,15 +120,15 @@ main section#main-content .container {
   padding-top: 2.5rem;
   flex-wrap: wrap;
 }
-main section#main-content .container button {
+main section#comics-content .container button {
   padding: 0.5rem 3rem;
 }
-main section#main-content .container div.card {
+main section#comics-content .container div.card {
   height: 210px;
   margin-bottom: 3rem;
   width: calc(16.6666666667% - 2rem);
 }
-main section#main-content .container div.card img {
+main section#comics-content .container div.card img {
   height: 90%;
   width: 100%;
   -o-object-fit: cover;
@@ -136,28 +136,63 @@ main section#main-content .container div.card img {
   -o-object-position: 0% 0%;
      object-position: 0% 0%;
 }
-main section#main-content .container div.card h4 {
+main section#comics-content .container div.card h4 {
   margin: 0.85rem 0;
   font-weight: 400;
 }
-main #main-menu {
+main section#news-jumbo {
+  height: 43vh;
+  position: relative;
+  background: url("/images/news-jumbo.jpg") top/cover no-repeat;
+}
+main section#news-jumbo button {
+  top: 95%;
+  left: 15.5%;
+  position: absolute;
+  font-size: 1.5rem;
+}
+main section#news {
+  color: #303030;
+  padding: 2rem 0;
+}
+main section#news div.container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main section#news div.container div.card {
+  width: 40%;
+  height: 500px;
+  background-color: #F7F7F7;
+}
+main section#news div.container div.card div.card-img img {
+  width: 100%;
+}
+main section#news div.container div.card div.card-info {
+  font-size: 0.85rem;
+  padding: 1rem;
+}
+main section#menu {
   padding: 1rem 0;
   text-align: center;
   background-color: #107eec;
 }
-main #main-menu ul {
+main section#menu ul {
   display: flex;
   gap: 4rem;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-main #main-menu ul li {
+main section#menu ul li {
   padding: 2rem 0;
   font-size: 0.8rem;
   display: inline-block;
 }
-main #main-menu ul li a {
+main section#menu ul li a {
   display: flex;
   gap: 0;
   flex-direction: row;
@@ -165,20 +200,20 @@ main #main-menu ul li a {
   justify-content: center;
   color: white;
 }
-main #main-menu ul li a img {
+main section#menu ul li a img {
   height: 55px;
   max-width: 55px;
   margin-right: 0.8rem;
 }
-main #main-menu ul li a h4 {
+main section#menu ul li a h4 {
   font-weight: 400;
 }
 
-footer.home-footer section.footer-nav {
+footer section.footer-nav {
   background-image: url("/images/footer-bg.jpg");
 }
-footer.home-footer section.footer-nav nav {
-  padding-top: 1rem;
+footer section.footer-nav nav {
+  padding: 2.5rem 0;
   display: flex;
   gap: 2rem;
   flex-direction: row;
@@ -186,42 +221,42 @@ footer.home-footer section.footer-nav nav {
   justify-content: flex-start;
   background: url("/images/dc-logo-bg.png") no-repeat right;
 }
-footer.home-footer section.footer-nav nav div.footer-list-col {
-  padding-bottom: 3.5rem;
+footer section.footer-nav nav div.footer-list-col {
+  padding-bottom: 1rem;
 }
-footer.home-footer section.footer-nav nav div.footer-list-col h3 {
+footer section.footer-nav nav div.footer-list-col h3 {
   color: white;
-  margin-bottom: 0.5rem;
+  padding: 1rem 0;
 }
-footer.home-footer section.footer-nav nav div.footer-list-col li {
+footer section.footer-nav nav div.footer-list-col li {
   padding: 0.12rem 0;
 }
-footer.home-footer section.footer-nav nav div.footer-list-col li a {
+footer section.footer-nav nav div.footer-list-col li a {
   font-size: 0.8rem;
   color: rgb(156, 156, 156);
 }
-footer.home-footer section.footer-social {
+footer section.footer-social {
   padding: 1rem 0;
   background-color: #303030;
   font-family: "Asap Condensed", sans-serif;
 }
-footer.home-footer section.footer-social div.container {
+footer section.footer-social div.container {
   display: flex;
   gap: 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-footer.home-footer section.footer-social div.container div.socials {
+footer section.footer-social div.container div.socials {
   display: flex;
   gap: 1.5rem;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-footer.home-footer section.footer-social div.container div.socials h2 {
+footer section.footer-social div.container div.socials h2 {
   color: #107eec;
 }
-footer.home-footer section.footer-social div.container div.socials img {
+footer section.footer-social div.container div.socials img {
   width: 35px;
 }

@@ -44,7 +44,7 @@
 		[
 				'text'=> "News",
 				'active'=> false,
-				'url'=> "/",
+				'url'=> "/news",
 		],
 		[
 				'text'=> "Shop",

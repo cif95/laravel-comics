@@ -1,4 +1,4 @@
-<footer class="home-footer">
+<footer>
 	<section class="footer-nav">
 		<div class="container">
 			<nav>

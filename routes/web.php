@@ -39,3 +39,17 @@ Route::get('/comics', function () {
 })->name('guest-comics');
 
 
+Route::get('/news', function () {
+    $headerLinks = config('headerNavbar');
+    $newsCards = config('news');
+    $menuItems = config('menu');
+    $footerNavbar = config('footerNavbar');
+    return view('guest.news',  [ 
+        'headerLinks' => $headerLinks,
+        'newsCards' => $newsCards,
+        'menuItems' => $menuItems,
+        'footerNav' => $footerNavbar
+        ] );
+})->name('guest-news');
+
+

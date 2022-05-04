@@ -1,4 +1,4 @@
-<section id="main-menu">
+<section id="menu">
 	<div class="container">
 		<ul>
 			@foreach($menuItems as $item)
