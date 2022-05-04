@@ -86,26 +86,26 @@ main {
 			}
 	}
 	#main-menu {
-			padding: 2rem 0;
+			padding: 1rem 0;
 			text-align: center;
 			background-color: $brandColor;
 			ul {
 				@include flex(center, center, row, 4rem);
 				li {
-					padding: 0.7rem;
-							font-size: 1rem;
-							display: inline-block;
-							a {
-									@include flex(center, center, row, 0);
-									color: white;
-									img {
-										height: 60px;
-										max-width: 60px;
-										margin-right: 0.8rem;
-									}
-									h4 {
-										font-weight: 400;
-									}
+					padding: 2rem 0;
+					font-size: 0.8rem;
+					display: inline-block;
+					a {
+							@include flex(center, center, row, 0);
+							color: white;
+							img {
+								height: 55px;
+								max-width: 55px;
+								margin-right: 0.8rem;
+							}
+							h4 {
+								font-weight: 400;
+							}
 					}
 				}
 			}

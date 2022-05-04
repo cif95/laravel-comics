@@ -141,7 +141,7 @@ main section#main-content .container div.card h4 {
   font-weight: 400;
 }
 main #main-menu {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   background-color: #107eec;
 }
@@ -153,8 +153,8 @@ main #main-menu ul {
   justify-content: center;
 }
 main #main-menu ul li {
-  padding: 0.7rem;
-  font-size: 1rem;
+  padding: 2rem 0;
+  font-size: 0.8rem;
   display: inline-block;
 }
 main #main-menu ul li a {
@@ -166,8 +166,8 @@ main #main-menu ul li a {
   color: white;
 }
 main #main-menu ul li a img {
-  height: 60px;
-  max-width: 60px;
+  height: 55px;
+  max-width: 55px;
   margin-right: 0.8rem;
 }
 main #main-menu ul li a h4 {

@@ -3,6 +3,7 @@
 @section('title', 'Comics')
 
 @section('content')
+@include('partials.hero')
 
 	<section id="main-content">
 		<div id="cards-wrapper" class="container">
