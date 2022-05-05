@@ -15,12 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $headerLinks = config('headerNavbar');
+    $sliderItems = config('home-slider');
     $menuItems = config('menu');
     $footerNavbar = config('footerNavbar');
     return view('guest.home', [
         'headerLinks' => $headerLinks,
         'menuItems' => $menuItems,
-        'footerNav' => $footerNavbar
+        'footerNav' => $footerNavbar,
+        'sliderItems' => $sliderItems
     ]);
 })->name('guest-home');
 

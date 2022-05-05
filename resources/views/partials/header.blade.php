@@ -6,9 +6,11 @@
 		</div>
 	</section>
 	<section id="lower-header" class="container">
-		<div class="header-logo">
-			<img src="{{ asset("images/dc-logo.png")}}" alt="dc comics logo" />
-		</div>
+		<a href="{{ route('guest-home') }}">
+			<div class="header-logo">
+				<img src="{{ asset("images/dc-logo.png")}}" alt="dc comics logo" />
+			</div>
+		</a>
 		<nav class="header-nav">
 			<ul>
 				@foreach($headerLinks as $link)

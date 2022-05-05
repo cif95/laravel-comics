@@ -13,6 +13,8 @@ body {
 	font-family: "Asap Condensed", sans-serif;
 }
 
+// Header 
+
 header {
 	section#upper-header {
 		text-align: end;
@@ -66,7 +68,51 @@ header {
 	}
 }
 
+//Main
+
 main {
+// homepage jumbotron
+	section#home-jumbo {
+		height: 60vh;
+		position: relative;
+		span {
+			font-size: 1rem;
+			display: inline-block;
+			border-radius: 50%;
+			padding: 1rem 1.2rem;
+			color: white;
+			background-color: #4B5355A8;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			&:first-child {
+				left: 0;
+				margin-left: 1rem;
+			}
+			&:last-of-type {
+				right: 0;
+				margin-right: 1rem;
+			}
+		}
+		img {
+			display: none;
+			width: 100%;
+			height: 60vh;
+			object-position: top;
+			object-fit: cover;
+			&.active {
+				display: block;
+			}
+		}
+		button {
+			bottom: 85%;
+			left: 5%;
+			position: absolute;
+			font-size: 1.5rem;
+		}
+	}
+// comics page jumbotron 
 	section#comics-jumbo {
 			height: 43vh;
 			position: relative;
@@ -78,6 +124,7 @@ main {
 					font-size: 1.5rem;
 			}
 	}
+// comics page content
 	section#comics-content {
 			padding: 1.5rem 0;
 			color: white;
@@ -108,6 +155,7 @@ main {
 			}
 			}
 	}
+// comics detail page jumbotron
 	section#comics-jumbo.jumbo-cm-detail {
 		&::after {
 				content:'';
@@ -118,6 +166,7 @@ main {
 				background: $brandColor;
 		}
 	}
+// comics detail page content
 	section#comics-detail {
 		padding-top: 5rem;
 		div.container {
@@ -128,12 +177,11 @@ main {
 				position: absolute;
 				bottom: 105%;
 				border: 1px solid white;
-				&::after {
-					content:'view gallery';
+				&::after,
+				&::before {
 					position: absolute;
-					height: 20px;
-					width: 100%;
-					bottom: 0;
+					font-size: 0.80rem;
+					height: 15px;
 					text-transform: uppercase;
 					display: block;
 					color: white;
@@ -141,10 +189,22 @@ main {
 					padding: 0.25rem 0;
 					background: #00A9D9;
 				}
+				&::after {
+					content:'view gallery';
+					bottom: 0;
+					width: 100%;
+				}
+				&::before {
+					content:'comic book';
+					top: 0;
+					width: 40%;
+					left: 0;
+				}
 			}
+// detail availability
 			div.wrapper {
-				padding: 2rem 0;
-				@include flex(center, center, row, 1rem);
+				padding: 5rem 0;
+				@include flex(center, center, row, 2rem);
 				div.info {
 					align-self: flex-start;
 					h1,
@@ -158,6 +218,12 @@ main {
 					}
 					p {
 						color: grey;
+						&:nth-child(2) {
+							margin-left: auto;
+						}
+						&:last-child {
+							line-height: 1.5rem;
+						}
 					}
 					div.info-availability {
 						padding:0 1rem;
@@ -176,15 +242,34 @@ main {
 								text-transform: uppercase;
 							}
 						}
+						span:last-child {
+							margin-left: 1rem;
+						}
+					}
+				}
+				div.adv {
+					position: relative;
+					&::before{
+						content: 'advertisement';
+						position: absolute;
+						font-size: 1rem;
+						text-transform: uppercase;
+						color: grey;
+						bottom: 100%;
+						font-weight: bold;
+						margin-bottom: 0.5rem;
+						right: 0;
+						text-align: center;
 					}
 				}
 			}
 		}
+// detail talent and specs
 		div#more {
 			background-color: #F6F6F6;
 			padding: 2rem 0;
 			div.container {
-				@include flex(center, center, row, 2rem);
+				@include flex(inherit, center, row, 2rem);
 				div#talent,
 				div#specs {
 					flex-basis: 50%;
@@ -203,12 +288,22 @@ main {
 						border-bottom: 1px solid gray;
 						h4 {
 							font-size: 0.75rem;
+							width: 250px;
+						}
+						p {
+							color: $brandColor;
+							font-size: 0.85rem;
+						}
+						p,
+						span {
+							margin-left: auto;
 						}
 					}
 				}
 			}
 		}
 	}
+// comics detail page menu
 	section#detail-menu {
 		background-color: #F6F6F6;
 		border-top: 1px solid rgb(190, 190, 190);
@@ -235,6 +330,7 @@ main {
 			}
 		}
 	}
+// news page jumbotron
 	section#news-jumbo {
 		height: 43vh;
 		position: relative;
@@ -246,6 +342,7 @@ main {
 				font-size: 1.5rem;
 		}
 	}
+// news page content
 	section#news-content {
 		color: #303030;
 		padding: 2rem 0;
@@ -266,6 +363,7 @@ main {
 			}
 		}
 	}
+// main menu 
 	section#menu {
 			padding: 1rem 0;
 			text-align: center;
@@ -293,6 +391,7 @@ main {
 	}
 }
 
+// common footer -> nav & socials
 
 footer {
   section.footer-nav {

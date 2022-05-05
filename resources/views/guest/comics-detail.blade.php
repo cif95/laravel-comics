@@ -68,11 +68,11 @@
 					</div>
 					<div class="row">
 						<h4>U.S. Price:</h4>
-						<p>{{ $comicsCard['price'] }}</p>
+						<span>{{ $comicsCard['price'] }}</span>
 					</div>
 					<div class="row">
 						<h4>On sale date:</h4>
-						<p>{{ $comicsCard['sale_date'] }}</p>
+						<span>{{ $comicsCard['sale_date'] }}</span>
 					</div>
 				</div>
 			</div>

@@ -10394,6 +10394,48 @@ header section#lower-header input::placeholder {
   font-family: "Asap Condensed", sans-serif;
 }
 
+main section#home-jumbo {
+  height: 60vh;
+  position: relative;
+}
+main section#home-jumbo span {
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem 1.2rem;
+  color: white;
+  background-color: rgba(75, 83, 85, 0.6588235294);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main section#home-jumbo span:first-child {
+  left: 0;
+  margin-left: 1rem;
+}
+main section#home-jumbo span:last-of-type {
+  right: 0;
+  margin-right: 1rem;
+}
+main section#home-jumbo img {
+  display: none;
+  width: 100%;
+  height: 60vh;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section#home-jumbo img.active {
+  display: block;
+}
+main section#home-jumbo button {
+  bottom: 85%;
+  left: 5%;
+  position: absolute;
+  font-size: 1.5rem;
+}
 main section#comics-jumbo {
   height: 43vh;
   position: relative;
@@ -10462,12 +10504,10 @@ main section#comics-detail div.container div.thumb {
   bottom: 105%;
   border: 1px solid white;
 }
-main section#comics-detail div.container div.thumb::after {
-  content: "view gallery";
+main section#comics-detail div.container div.thumb::after, main section#comics-detail div.container div.thumb::before {
   position: absolute;
-  height: 20px;
-  width: 100%;
-  bottom: 0;
+  font-size: 0.8rem;
+  height: 15px;
   text-transform: uppercase;
   display: block;
   color: white;
@@ -10475,10 +10515,21 @@ main section#comics-detail div.container div.thumb::after {
   padding: 0.25rem 0;
   background: #00A9D9;
 }
+main section#comics-detail div.container div.thumb::after {
+  content: "view gallery";
+  bottom: 0;
+  width: 100%;
+}
+main section#comics-detail div.container div.thumb::before {
+  content: "comic book";
+  top: 0;
+  width: 40%;
+  left: 0;
+}
 main section#comics-detail div.container div.wrapper {
-  padding: 2rem 0;
+  padding: 5rem 0;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -10497,6 +10548,12 @@ main section#comics-detail div.container div.wrapper div.info h1 {
 }
 main section#comics-detail div.container div.wrapper div.info p {
   color: grey;
+}
+main section#comics-detail div.container div.wrapper div.info p:nth-child(2) {
+  margin-left: auto;
+}
+main section#comics-detail div.container div.wrapper div.info p:last-child {
+  line-height: 1.5rem;
 }
 main section#comics-detail div.container div.wrapper div.info div.info-availability {
   padding: 0 1rem;
@@ -10520,6 +10577,24 @@ main section#comics-detail div.container div.wrapper div.info div.info-availabil
   border-right: 1px solid rgb(24, 24, 24);
   text-transform: uppercase;
 }
+main section#comics-detail div.container div.wrapper div.info div.info-availability span:last-child {
+  margin-left: 1rem;
+}
+main section#comics-detail div.container div.wrapper div.adv {
+  position: relative;
+}
+main section#comics-detail div.container div.wrapper div.adv::before {
+  content: "advertisement";
+  position: absolute;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: grey;
+  bottom: 100%;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  right: 0;
+  text-align: center;
+}
 main section#comics-detail div#more {
   background-color: #F6F6F6;
   padding: 2rem 0;
@@ -10528,7 +10603,7 @@ main section#comics-detail div#more div.container {
   display: flex;
   gap: 2rem;
   flex-direction: row;
-  align-items: center;
+  align-items: inherit;
   justify-content: center;
 }
 main section#comics-detail div#more div.container div#talent,
@@ -10556,6 +10631,18 @@ main section#comics-detail div#more div.container div#specs div.row {
 main section#comics-detail div#more div.container div#talent div.row h4,
 main section#comics-detail div#more div.container div#specs div.row h4 {
   font-size: 0.75rem;
+  width: 250px;
+}
+main section#comics-detail div#more div.container div#talent div.row p,
+main section#comics-detail div#more div.container div#specs div.row p {
+  color: #107eec;
+  font-size: 0.85rem;
+}
+main section#comics-detail div#more div.container div#talent div.row p,
+main section#comics-detail div#more div.container div#talent div.row span,
+main section#comics-detail div#more div.container div#specs div.row p,
+main section#comics-detail div#more div.container div#specs div.row span {
+  margin-left: auto;
 }
 main section#detail-menu {
   background-color: #F6F6F6;
