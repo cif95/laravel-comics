@@ -27,16 +27,35 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $headerLinks = config('headerNavbar');
-    $comicsCard = config('comics');
+    $comicsCards = config('comics');
     $menuItems = config('menu');
     $footerNavbar = config('footerNavbar');
     return view('guest.comics',  [ 
         'headerLinks' => $headerLinks,
-        'comicsCard' => $comicsCard,
+        'comicsCards' => $comicsCards,
         'menuItems' => $menuItems,
         'footerNav' => $footerNavbar
         ] );
 })->name('guest-comics');
+
+
+Route::get('/comics/{i}', function ($i) {
+    $headerLinks = config('headerNavbar');
+    $comicsCards = config('comics');
+    $menuItems = config('menu');
+    $footerNavbar = config('footerNavbar');
+
+    if ( $i >= 0 && $i < count($comicsCards) && is_numeric($i) ) {
+        return view('guest.comics-detail',  [ 
+            'headerLinks' => $headerLinks,
+            'comicsCard' => $comicsCards[$i],
+            'menuItems' => $menuItems,
+            'footerNav' => $footerNavbar
+            ] );
+    } else {
+        abort(404);
+    }
+})->name('guest-comics-detail');
 
 
 Route::get('/news', function () {

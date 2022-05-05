@@ -20,5 +20,6 @@
 				@endforeach
 			</ul>
 		</nav>
+		<input type="text" placeholder="Search..">
 	</section>
 </header>

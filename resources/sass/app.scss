@@ -1,6 +1,13 @@
 @import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/common';
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap');
+$fa-font-path: "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
 
 body {
 	font-family: "Asap Condensed", sans-serif;
@@ -22,13 +29,13 @@ header {
     @include flex(center, space-between, row, 0);
     img {
       padding-left: 1rem;
-      width: 100px;
+      width: 95px;
     }
     li {
       padding: 3rem 0;
       font-weight: 600;
       margin-left: 2rem;
-      font-size: 0.85rem;
+      font-size: 1rem;
 			text-transform: uppercase;
       display: inline-block;
       border-bottom: 5px solid transparent;
@@ -42,11 +49,24 @@ header {
         color: rgb(70, 70, 70);
       }
     }
+		input {
+			width: 10%;
+			border: none;
+			font-weight: bold;
+			border-bottom: 2px solid $brandColor;
+			text-align: end;
+			padding: 0.5rem;
+			&::placeholder {
+				opacity: 1;
+				font-size: 1rem;
+				color: rgb(70, 70, 70);
+				font-family: "Asap Condensed", sans-serif;
+			}
+		}
 	}
 }
 
 main {
-	color: white;
 	section#comics-jumbo {
 			height: 43vh;
 			position: relative;
@@ -60,6 +80,7 @@ main {
 	}
 	section#comics-content {
 			padding: 1.5rem 0;
+			color: white;
 			background-color: $secondaryColor;
 			.container {
 					@include flex(flex-start, center, row, 1.7rem);
@@ -72,18 +93,93 @@ main {
 				height: 210px;
 					margin-bottom: 3rem;
 					width: calc(100% / 6 - 2rem);
-					img {
-							height: 90%;
-							width: 100%;
-							object-fit: cover;
-							object-position: 0% 0%;
+					a img {
+						height: 90%;
+						width: 100%;
+						object-fit: cover;
+						object-position: 0% 0%;
 					}
-					h4 {
-							margin: 0.85rem 0;
-							font-weight: 400;
+					a h4 {
+						text-decoration: none;
+						color: white;
+						margin: 0.85rem 0;
+						font-weight: 400;
 					}
 			}
 			}
+	}
+	section#comics-jumbo.jumbo-cm-detail {
+		&::after {
+				content:'';
+				position: absolute;
+				height: 80px;
+				width: 100%;
+				top: 100%;
+				background: $brandColor;
+		}
+	}
+	section#comics-detail {
+		padding-top: 5rem;
+		div.container {
+			width: 55%;
+			position: relative;
+			margin: 0 auto;
+		}
+		div.thumb {
+			position: absolute;
+			bottom: 105%;
+			border: 1px solid white;
+			&::after {
+				content:'view gallery';
+				position: absolute;
+				height: 20px;
+				width: 100%;
+				bottom: 0;
+				text-transform: uppercase;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 0.25rem 0;
+				background: #00A9D9;
+			}
+		}
+		div.wrapper {
+			padding: 2rem 0;
+			@include flex(center, center, row, 1rem);
+			div.info {
+				align-self: flex-start;
+				h1,
+				div.info-availability {
+					margin-bottom: 1rem;
+				}
+				h1 {
+					font-size: 2rem;
+					text-transform: uppercase;
+					color: #003F5E;
+				}
+				p {
+					color: grey;
+				}
+				div.info-availability {
+					padding:0 1rem;
+					line-height: 3rem;
+					border-bottom: 1px solid rgb(24, 24, 24);
+					@include flex(center, space-between, row, 0);
+					background-color: #55BA59;
+					span {
+						color: white;
+					}
+					p {
+						color: #6bf170;
+						&:nth-of-type(2) {
+							padding-right: 0.75rem;
+							border-right: 1px solid rgb(24, 24, 24);
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
 	}
 	section#news-jumbo {
 		height: 43vh;
@@ -96,7 +192,7 @@ main {
 				font-size: 1.5rem;
 		}
 	}
-	section#news {
+	section#news-content {
 		color: #303030;
 		padding: 2rem 0;
 		div.container {

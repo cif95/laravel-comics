@@ -2,11 +2,14 @@
 
 @section('title', 'News')
 
-@section('content')
+@section('hero')
 	<section id="news-jumbo">
 		<button class="my-btn-primary">News</button>
 	</section>
-	<section id="news">
+@endsection
+
+@section('content')
+	<section id="news-content">
 		<div class="container">
 			@foreach ($newsCards as $card)
 				<div class="card">
