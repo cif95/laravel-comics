@@ -12,7 +12,7 @@
 		<nav class="header-nav">
 			<ul>
 				@foreach($headerLinks as $link)
-						<li class="{{ ($link['active']) ? 'active' : '' }}">
+						<li class="{{ (Route::currentRouteName() == $link['route']) ? 'active' : '' }}">
 							<a href="{{ url($link['url']) }}">
 								{{ $link['text'] }}
 							</a>

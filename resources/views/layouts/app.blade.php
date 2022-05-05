@@ -12,6 +12,7 @@
 	<main>
 		@yield('hero')
 		@yield('content')
+		@yield('menu')
 	</main>
 	@include('partials.footer')
 </body>

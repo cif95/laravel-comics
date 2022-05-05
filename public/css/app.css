@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -35,12 +40,6 @@ a {
   height: 50px;
   padding: 0 1rem;
   border: 2px solid #107eec;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
@@ -10458,12 +10457,12 @@ main section#comics-detail div.container {
   position: relative;
   margin: 0 auto;
 }
-main section#comics-detail div.thumb {
+main section#comics-detail div.container div.thumb {
   position: absolute;
   bottom: 105%;
   border: 1px solid white;
 }
-main section#comics-detail div.thumb::after {
+main section#comics-detail div.container div.thumb::after {
   content: "view gallery";
   position: absolute;
   height: 20px;
@@ -10476,7 +10475,7 @@ main section#comics-detail div.thumb::after {
   padding: 0.25rem 0;
   background: #00A9D9;
 }
-main section#comics-detail div.wrapper {
+main section#comics-detail div.container div.wrapper {
   padding: 2rem 0;
   display: flex;
   gap: 1rem;
@@ -10484,22 +10483,22 @@ main section#comics-detail div.wrapper {
   align-items: center;
   justify-content: center;
 }
-main section#comics-detail div.wrapper div.info {
+main section#comics-detail div.container div.wrapper div.info {
   align-self: flex-start;
 }
-main section#comics-detail div.wrapper div.info h1,
-main section#comics-detail div.wrapper div.info div.info-availability {
+main section#comics-detail div.container div.wrapper div.info h1,
+main section#comics-detail div.container div.wrapper div.info div.info-availability {
   margin-bottom: 1rem;
 }
-main section#comics-detail div.wrapper div.info h1 {
+main section#comics-detail div.container div.wrapper div.info h1 {
   font-size: 2rem;
   text-transform: uppercase;
   color: #003F5E;
 }
-main section#comics-detail div.wrapper div.info p {
+main section#comics-detail div.container div.wrapper div.info p {
   color: grey;
 }
-main section#comics-detail div.wrapper div.info div.info-availability {
+main section#comics-detail div.container div.wrapper div.info div.info-availability {
   padding: 0 1rem;
   line-height: 3rem;
   border-bottom: 1px solid rgb(24, 24, 24);
@@ -10510,16 +10509,87 @@ main section#comics-detail div.wrapper div.info div.info-availability {
   justify-content: space-between;
   background-color: #55BA59;
 }
-main section#comics-detail div.wrapper div.info div.info-availability span {
+main section#comics-detail div.container div.wrapper div.info div.info-availability span {
   color: white;
 }
-main section#comics-detail div.wrapper div.info div.info-availability p {
+main section#comics-detail div.container div.wrapper div.info div.info-availability p {
   color: #6bf170;
 }
-main section#comics-detail div.wrapper div.info div.info-availability p:nth-of-type(2) {
+main section#comics-detail div.container div.wrapper div.info div.info-availability p:nth-of-type(2) {
   padding-right: 0.75rem;
   border-right: 1px solid rgb(24, 24, 24);
   text-transform: uppercase;
+}
+main section#comics-detail div#more {
+  background-color: #F6F6F6;
+  padding: 2rem 0;
+}
+main section#comics-detail div#more div.container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main section#comics-detail div#more div.container div#talent,
+main section#comics-detail div#more div.container div#specs {
+  flex-basis: 50%;
+  margin-bottom: 3rem;
+}
+main section#comics-detail div#more div.container div#talent h3,
+main section#comics-detail div#more div.container div#specs h3 {
+  border-bottom: 1px solid gray;
+}
+main section#comics-detail div#more div.container div#talent h3,
+main section#comics-detail div#more div.container div#talent h4,
+main section#comics-detail div#more div.container div#specs h3,
+main section#comics-detail div#more div.container div#specs h4 {
+  color: #003F5E;
+  padding-bottom: 1rem;
+}
+main section#comics-detail div#more div.container div#talent div.row,
+main section#comics-detail div#more div.container div#specs div.row {
+  gap: 4rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+}
+main section#comics-detail div#more div.container div#talent div.row h4,
+main section#comics-detail div#more div.container div#specs div.row h4 {
+  font-size: 0.75rem;
+}
+main section#detail-menu {
+  background-color: #F6F6F6;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+main section#detail-menu ul {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main section#detail-menu ul li {
+  flex-basis: 25%;
+  padding: 0.85rem;
+  font-size: 0.8rem;
+  display: inline-block;
+  border-right: 1px solid rgb(190, 190, 190);
+  border-left: 1px solid rgb(190, 190, 190);
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: inherit;
+  justify-content: space-between;
+  color: grey;
+}
+main section#detail-menu ul li img {
+  filter: contrast(0);
+  height: 30px;
+  max-width: 40px;
+  margin-right: 0.8rem;
+}
+main section#detail-menu ul li h4 {
+  font-weight: 400;
 }
 main section#news-jumbo {
   height: 43vh;

@@ -42,9 +42,8 @@ Route::get('/comics', function () {
 Route::get('/comics/{i}', function ($i) {
     $headerLinks = config('headerNavbar');
     $comicsCards = config('comics');
-    $menuItems = config('menu');
+    $menuItems = config('detail-menu');
     $footerNavbar = config('footerNavbar');
-
     if ( $i >= 0 && $i < count($comicsCards) && is_numeric($i) ) {
         return view('guest.comics-detail',  [ 
             'headerLinks' => $headerLinks,

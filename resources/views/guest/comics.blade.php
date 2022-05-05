@@ -24,6 +24,9 @@
 			<button class="my-btn-primary">Load More</button>
 		</div>
 	</section>
-	@include('partials.menu')
+@endsection
 
+
+@section('menu')
+	@include('partials.menu')
 @endsection

@@ -39,5 +39,60 @@
 				</div>
 			</div>
 		</div>
+		<div id="more">
+			<div class="container">
+				<div id="talent">
+					<h3>Talent</h3>
+					<div class="row">
+						<h4>Art by:</h4>
+						<p>
+							@foreach($comicsCard['artists'] as $artist)
+								{{ $artist }},
+							@endforeach
+						</p>
+					</div>
+					<div class="row">
+						<h4>Written by:</h4>
+						<p>
+							@foreach($comicsCard['writers'] as $writer)
+								{{ $writer }},
+							@endforeach
+						</p>
+					</div>
+				</div>
+				<div id="specs">
+					<h3>Specs</h3>
+					<div class="row">
+						<h4>Series:</h4>
+						<p>{{ $comicsCard['series'] }}</p>
+					</div>
+					<div class="row">
+						<h4>U.S. Price:</h4>
+						<p>{{ $comicsCard['price'] }}</p>
+					</div>
+					<div class="row">
+						<h4>On sale date:</h4>
+						<p>{{ $comicsCard['sale_date'] }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+@endsection
+
+@section('menu')
+	<section id="detail-menu">
+		<div class="container">
+			<ul>
+				@foreach($menuItems as $item)
+					<li>
+						<h4 class="text-uppercase">
+							{{ $item['text'] }}
+						</h4>
+						<img src="/images/{{ $item['src'] }}" alt="{{ $item['alt'] }}"/>
+					</li>
+				@endforeach
+			</ul>
+		</div>
 	</section>
 @endsection
