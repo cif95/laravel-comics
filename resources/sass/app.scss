@@ -130,14 +130,14 @@ main {
 			color: white;
 			background-color: $secondaryColor;
 			.container {
-					@include flex(flex-start, center, row, 1.7rem);
-					padding-top: 2.5rem;
-					flex-wrap: wrap;
-					button {
-							padding: 0.5rem 3rem;
-					}
-			div.card {
-				height: 210px;
+				@include flex(flex-start, center, row, 1.7rem);
+				padding-top: 2.5rem;
+				flex-wrap: wrap;
+				button {
+						padding: 0.5rem 3rem;
+				}
+				div.card {
+					height: 210px;
 					margin-bottom: 3rem;
 					width: calc(100% / 6 - 2rem);
 					a img {
@@ -152,7 +152,7 @@ main {
 						margin: 0.85rem 0;
 						font-weight: 400;
 					}
-			}
+				}
 			}
 	}
 // comics detail page jumbotron
